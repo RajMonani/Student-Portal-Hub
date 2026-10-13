@@ -1,53 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification-banner" class="notification-banner">
+        📢 Welcome to the Events Explorer!
+        <span id="close-banner" class="close-banner">&times;</span>
+    </div>
+
+    <div class="header-bar">
+        <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </div>
+
+    <nav id="nav-menu" class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="profile.html">Profile</a>
+        <a href="register.html">Register</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact</a>
+        <a href="Event.html">Events</a>
+    </nav>
+
+    <div class="content-box">
         <center>
-        <strong> Welcome To Event page ...</strong>
-        
-        <br> <br>
-        <h1> Register Your Event..</h1>
-          
-        <br> <br>
-        <hr>
-        <label> Enter Event Details </label>
-        <br> <br>
-        <input type="radio" placeholder="Event Type">technical
-        <br> <br>
-         <input type="radio" placeholder="Event Type">Non technical
-         <br> <br>
-         <label> Enter Event Name </label>
-         <br> <br>
-         <input type="text" placeholder="Event Name">
-         <br> <br>
-          <label> Enter Event Days </label>
-          <br> <br>
-         <input type="Number" placeholder="Event Duration">
-         <br> <br>
-         <label> Enter Event Starting Date</label>
-         <br> <br>
-         <input type="date" placeholder="Event starting date">
-         <br> <br>
-         <label> Enter Event Ending Date </label>
-         <br> <br>
-         <input type="date" placeholder="Event Ending date">
-         <br> <br>
-         <label> Enter Event Venue </label>
-         <br> <br>
-         <input type="text" placeholder="Event venue">
-         <br> <br>
-         <label> Enter Event Result </label>
-         <br> <br>
-         <input type="radio" placeholder="Event Result">winner
-         <input type="radio" placeholder="Event Result"> Not winner
-         <a href="contact.html">contactpage</a>
-          </center>
-         <hr>
+            <h1>Campus Events Explorer</h1>
+            <hr>
+        </center>
 
-      
+        <!-- Search, Filter, and Sort Controls -->
+        <div class="controls-container">
+            <input type="text" id="search-input" placeholder="Search events by name...">
+            <select id="filter-type">
+                <option value="All">All Types</option>
+                <option value="Technical">Technical</option>
+                <option value="Non-Technical">Non-Technical</option>
+            </select>
+            <select id="sort-date">
+                <option value="asc">Date (Oldest to Newest)</option>
+                <option value="desc">Date (Newest to Oldest)</option>
+            </select>
+        </div>
 
-         <script src="script.js"></script>
-    </body>
+        <!-- Dynamic JSON Data Container -->
+        <div id="events-container" class="events-grid">
+            <p>Loading events...</p>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-controls">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-info" style="font-weight:bold;">Page 1</span>
+            <button id="next-page">Next</button>
+        </div>
+
+        <center>
+            <br>
+            <a href="contact.html">Contact Page</a>
+            <hr>
+        </center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
