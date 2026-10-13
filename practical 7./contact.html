@@ -9,7 +9,6 @@
 
     <center>
         <h1>Contact Us</h1>
-       
     </center>
 
     <hr>
@@ -18,27 +17,26 @@
 
     <p><b>Email:</b> studenthub@gmail.com</p>
     <p><b>Phone:</b> +91 9274318670</p>
-    <p><b>Address:</b> Student Hub,Ahmedabad, India</p>
+    <p><b>Address:</b> Student Hub, Ahmedabad, India</p>
 
     <h2>Send Us a Message</h2>
 
-    <form>
+    <form action="process.php" method="POST">
         <label>Name:</label><br>
-        <input type="text" placeholder="Enter your name"><br><br>
+        <input type="text" name="name" placeholder="Enter your name" required><br><br>
 
         <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email"><br><br>
+        <input type="email" name="email" placeholder="Enter your email" required><br><br>
 
         <label>Message:</label><br>
-        <textarea rows="5" cols="30" placeholder="Write your message"></textarea><br><br>
+        <textarea name="message" rows="5" cols="30" placeholder="Write your message" required></textarea><br><br>
 
         <input type="submit" value="Send">
         <input type="reset" value="Clear">
     </form>
+    <br>
     <a href="feedback.html">feedbackpage</a>
     <hr>
-
-    
 
 </body>
 </html>
