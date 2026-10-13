@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification-banner" class="notification-banner">
+        📢 Register today to create your Student Hub account!
+        <span id="close-banner" class="close-banner">&times;</span>
+    </div>
+    <div class="header-bar">
+        <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </div>
+    <nav id="nav-menu" class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="profile.html">Profile</a>
+        <a href="register.html">Register</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact</a>
+        <a href="Event.html">Events</a>
+    </nav>
+    <div class="content-box">
+        <center>
+            <h1>Welcome to Registration page</h1>
+            <hr>
+            <h2>Create Your Account</h2><br>
+            
+            <form id="register-form" novalidate>
+                <label for="student-name">Full Name</label><br>
+                <input type="text" id="student-name" placeholder="Enter Full Name" required aria-required="true">
+                <span id="name-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <label for="student-email">Email Address</label><br>
+                <input type="email" id="student-email" placeholder="Enter Email ID" required aria-required="true">
+                <span id="email-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <label for="student-mobile">Mobile Number</label><br>
+                <input type="tel" id="student-mobile" placeholder="10-Digit Mobile Number" required aria-required="true">
+                <span id="mobile-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <label for="student-course">Course</label><br>
+                <select id="student-course" required aria-required="true">
+                    <option value="">Select Course</option>
+                    <option value="BTech">B.Tech</option>
+                    <option value="MTech">M.Tech</option>
+                    <option value="BCA">BCA</option>
+                </select>
+                <span id="course-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <label for="student-year">Year</label><br>
+                <select id="student-year" required aria-required="true">
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+                <span id="year-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <fieldset style="border: 1px solid #dcdde1; border-radius: 5px; padding: 10px; margin-top: 10px;">
+                    <legend style="font-weight: bold;">Gender</legend>
+                    <input type="radio" id="gender-male" name="gender" value="Male" required aria-required="true"> 
+                    <label for="gender-male">Male</label>
+                    <input type="radio" id="gender-female" name="gender" value="Female" required aria-required="true"> 
+                    <label for="gender-female">Female</label>
+                </fieldset>
+                <span id="gender-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <label for="student-password">Password</label><br>
+                <input type="password" id="student-password" placeholder="Password" required aria-required="true">
+                <span id="password-strength" style="display:block; font-size:0.9em; font-weight:bold;"></span>
+                <span id="password-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <label for="confirm-password">Confirm Password</label><br>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required aria-required="true">
+                <span id="confirm-password-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span>
+            
+                <input type="checkbox" id="terms" required aria-required="true">
+                <label for="terms">I accept the terms and conditions</label>
+                <span id="terms-error" class="error-msg" style="color:red; display:block; min-height:20px;"></span><br>
+            
+                <button type="submit" id="register-btn" style="padding: 10px 20px; background-color: #2980b9; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 15px;">Register</button>
+            </form>
+
+            <br>
+            <a href="login.html">loginpage</a>
+            <hr>
+        </center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
