@@ -1,0 +1,17 @@
+[
+    {"id": 1, "name": "Smart India Hackathon", "type": "Technical", "date": "2026-11-01", "venue": "Main Lab"},
+    {"id": 2, "name": "Annual Sports Meet", "type": "Non-Technical", "date": "2026-11-05", "venue": "University Ground"},
+    {"id": 3, "name": "AI & Machine Learning Workshop", "type": "Technical", "date": "2026-11-10", "venue": "Seminar Hall 3"},
+    {"id": 4, "name": "Crownical'26 Cultural Fest", "type": "Non-Technical", "date": "2026-11-15", "venue": "Open Auditorium"},
+    {"id": 5, "name": "C/C++ Code Debugging", "type": "Technical", "date": "2026-11-18", "venue": "Lab 1"},
+    {"id": 6, "name": "Photography Contest", "type": "Non-Technical", "date": "2026-11-20", "venue": "Campus Grounds"},
+    {"id": 7, "name": "Web Development Bootcamp", "type": "Technical", "date": "2026-11-22", "venue": "Seminar Hall 1"},
+    {"id": 8, "name": "Live Music Concert", "type": "Non-Technical", "date": "2026-11-25", "venue": "Auditorium"},
+    {"id": 9, "name": "Robotics Expo", "type": "Technical", "date": "2026-12-01", "venue": "Main Hall"},
+    {"id": 10, "name": "National Debate Competition", "type": "Non-Technical", "date": "2026-12-03", "venue": "Room 101"},
+    {"id": 11, "name": "Cyber Security Seminar", "type": "Technical", "date": "2026-12-05", "venue": "CSPIT Hall"},
+    {"id": 12, "name": "Campus Art Exhibition", "type": "Non-Technical", "date": "2026-12-08", "venue": "Art Gallery"},
+    {"id": 13, "name": "Data Structures Marathon", "type": "Technical", "date": "2026-12-10", "venue": "Lab 2"},
+    {"id": 14, "name": "Ghost Hunt – Chapter 2", "type": "Non-Technical", "date": "2026-12-12", "venue": "Campus Grounds"},
+    {"id": 15, "name": "Java OOP Masterclass", "type": "Technical", "date": "2026-12-15", "venue": "Lab 1"}
+]
